@@ -22,8 +22,8 @@ WebSocket连接`ws://127.0.0.1:60536`
 | intensity | int | 0≤强度≤100 |
 | ticks | int | 持续时间   0完整播放一遍波形, -1循环, 正整数:每个tick代表执行0.1秒 |
 
-
-
+# Awesome open-DGLAB-controller
+恶魔轮盘赌郊狼版
 
 
 
