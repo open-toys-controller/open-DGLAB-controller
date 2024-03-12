@@ -1,5 +1,9 @@
 # 开放郊狼控制器
 ## 支持2.0 & 3.0
+ [![](https://img.shields.io/badge/-TelegramChat-f2f3f4?style=flat-square&logo=Telegram&logoColor=2ca5e0)](https://t.me/dglabfun)
+   
+[控制器下载](https://github.com/open-toys-controller/open-DGLAB-controller/releases/latest)
+
 ## API示例: 设置波形和强度
 WebSocket连接`ws://127.0.0.1:60536`  
 这里ip是连接了郊狼并且开启了娱乐模式的手机  
