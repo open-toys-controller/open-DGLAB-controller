@@ -4,6 +4,11 @@
    
 [控制器下载](https://github.com/open-toys-controller/open-DGLAB-controller/releases/latest)
 
+## 使用教程
+- 连接郊狼
+- 启动娱乐模式
+- 启动第三方软件
+
 ## API示例: 设置波形和强度
 WebSocket连接`ws://127.0.0.1:60536`  
 这里ip是连接了郊狼并且开启了娱乐模式的手机  
