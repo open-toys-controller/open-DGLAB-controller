@@ -9,6 +9,9 @@
 - 启动娱乐模式
 - 启动第三方软件
 
+### [请为接下来要适配的小玩具投票>>](https://jinshuju.net/f/tptsRE)
+
+
 ## API示例: 设置波形和强度
 WebSocket连接`ws://127.0.0.1:60536`  
 这里ip是连接了郊狼并且开启了娱乐模式的手机  
@@ -32,9 +35,8 @@ WebSocket连接`ws://127.0.0.1:60536`
 | ticks | int | 持续时间   0完整播放一遍波形, -1循环, 正整数:每个tick代表执行0.1秒 |
 
 # Awesome open-DGLAB-controller
-恶魔轮盘赌郊狼版
-
-
+### 恶魔轮盘赌郊狼版
+![17103997466612](https://github.com/open-toys-controller/open-DGLAB-controller/assets/163114276/e37361f9-3186-4f3e-8a3e-e5b0a13b1d69)
 
 
 
