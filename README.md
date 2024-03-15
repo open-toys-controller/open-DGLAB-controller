@@ -2,15 +2,13 @@
 ## 支持2.0 & 3.0
  [![](https://img.shields.io/badge/-TelegramChat-f2f3f4?style=flat-square&logo=Telegram&logoColor=2ca5e0)](https://t.me/dglabfun)
    
-[控制器下载](https://github.com/open-toys-controller/open-DGLAB-controller/releases/latest)
-
 ## 使用教程
 - 连接郊狼
 - 启动娱乐模式
 - 启动第三方软件
 
 ### [请为接下来要适配的小玩具投票>>](https://jinshuju.net/f/tptsRE)
-
+[控制器下载](https://github.com/open-toys-controller/open-DGLAB-controller/releases/latest)
 
 ## API示例: 设置波形和强度
 WebSocket连接`ws://127.0.0.1:60536`  
