@@ -32,6 +32,7 @@ WebSocket连接`ws://127.0.0.1:60536`
 | intensity | int | 0≤强度≤100 |
 | ticks | int | 持续时间   0完整播放一遍波形, -1循环, 正整数:每个tick代表执行0.1秒 |
 
+
 # Awesome open-DGLAB-controller
 ### 恶魔轮盘赌郊狼版
 ![17103997466612](https://github.com/open-toys-controller/open-DGLAB-controller/assets/163114276/e37361f9-3186-4f3e-8a3e-e5b0a13b1d69)
@@ -39,6 +40,36 @@ WebSocket连接`ws://127.0.0.1:60536`
 
 
 
+# API NEXT
+以下api也许会在未来不久实现, 如果你有相应需求, 请发issue或直接联系  
+### api自定义波形
+```
+{  
+    "version": 1,  
+    "cmd": "set_pattern",  
+    "pattern_units": [
+        {intensity:50, frequency:100},
+        {intensity:80, frequency:100},
+        {intensity:100, frequency:100},
+    ],  
+    "intensity":100,  
+    "ticks": -1
+}
+```
+实际强度 = (pattern_units中的强度 / 100.0) * (intensity / 100.0) * app中设置的最大强度
+
+### api修改强度上限
+需要在app中授权
+```
+{  
+    "version": 1,  
+    "cmd": "change_max_intensity",  
+    "intensity":10,  
+}
+```
+| key | type | 解释 |
+| ---- | ---- | ---- |
+| intensity | int 可为负数 | 强度上限变化值 |
 
 
 
