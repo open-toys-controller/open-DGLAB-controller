@@ -28,9 +28,9 @@ WebSocket连接`ws://127.0.0.1:60536`
 | ---- | ---- | ---- |
 | version | int | api版本号, 填1就好 |
 | cmd | str | 指令类型, set_pattern设置波形 |
-| pattern_name | str | app内能够看到的波形名称 |
+| pattern_name | str | app内能够看到的波形名称, 没有则输出"经典"波形 |
 | intensity | int | 0≤强度≤100 |
-| ticks | int | 持续时间   0完整播放一遍波形, -1循环, 正整数:每个tick代表执行0.1秒 |
+| ticks | int | 持续时间   0:完整播放一遍波形后停止, -1:循环, 正整数:执行0.1 * ticks秒 |
 
 
 # Awesome open-DGLAB-controller
@@ -58,8 +58,24 @@ WebSocket连接`ws://127.0.0.1:60536`
 ```
 实际强度 = (pattern_units中的强度 / 100.0) * (intensity / 100.0) * app中设置的最大强度
 
+### 背景波形设置
+优先执行"set_pattern", 在没有"set_pattern"指令执行的情况下输出背景波形
+```
+{  
+    "version": 1,  
+    "cmd": "set_background_pattern",  
+    "pattern_units": [
+        {intensity:50, frequency:100},
+        {intensity:80, frequency:100},
+        {intensity:100, frequency:100},
+    ],  
+    "intensity":60,  
+    "ticks": -1
+}
+```
+
 ### api修改强度上限
-需要在app中授权
+需要在app中允许程序修改强度上限
 ```
 {  
     "version": 1,  
