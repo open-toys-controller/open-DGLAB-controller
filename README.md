@@ -11,12 +11,12 @@
 [控制器下载](https://github.com/open-toys-controller/open-DGLAB-controller/releases/latest)
 
 ## API示例: 设置波形和强度
-WebSocket连接`ws://127.0.0.1:60536`  
-这里ip是连接了郊狼并且开启了娱乐模式的手机  
+WebSocket连接`ws://127.0.0.1:60536/1`  
+这里ip是开启了娱乐模式的手机  
+`/1`代表API版本号为1, 照着填就好. 老版本api-v1已做兼容处理  
 连接以后, 将以下dictionary转换为json发送到设备  
 ```
 {  
-    "version": 1,  
     "cmd": "set_pattern",  
     "pattern_name": "经典",  
     "intensity":100,  
@@ -26,7 +26,6 @@ WebSocket连接`ws://127.0.0.1:60536`
 
 | key | type | 解释 |
 | ---- | ---- | ---- |
-| version | int | api版本号, 填1就好 |
 | cmd | str | 指令类型, set_pattern设置波形 |
 | pattern_name | str | app内能够看到的波形名称, 没有则输出"经典"波形 |
 | intensity | int | 0≤强度≤100 |
@@ -38,31 +37,36 @@ WebSocket连接`ws://127.0.0.1:60536`
 ![17103997466612](https://github.com/open-toys-controller/open-DGLAB-controller/assets/163114276/e37361f9-3186-4f3e-8a3e-e5b0a13b1d69)
 
 
-
+# API完整版
+### 停止输出波形
+```
+{  
+    "cmd": "stop_pattern"
+}
+```
 
 # API NEXT
-以下api也许会在未来不久实现, 如果你需要, 请发issue或tg联系. 否则我可能会鸽很久:D  
+**以下api还没有实现且可能被大改**  
+也许会在未来不久实现, 如果你需要, 请**发issue或直接联系**. 否则我可能会鸽很久:D  
 ### api自定义波形
 ```
 {  
-    "version": 1,  
     "cmd": "set_pattern",  
     "pattern_units": [
-        {intensity:50, frequency:100},
-        {intensity:80, frequency:100},
-        {intensity:100, frequency:100},
+        {pattern_intensity:50, frequency:100},
+        {pattern_intensity:80, frequency:100},
+        {pattern_intensity:100, frequency:100},
     ],  
     "intensity":100,  
     "ticks": -1
 }
 ```
-实际强度 = (pattern_units中的强度 / 100.0) * (intensity / 100.0) * app中设置的最大强度
+实际强度 = (pattern_intensity / 100.0) * (intensity / 100.0) * app中设置的最大强度
 
 ### 背景波形设置
 优先执行"set_pattern", 在没有"set_pattern"指令执行的情况下输出背景波形
 ```
 {  
-    "version": 1,  
     "cmd": "set_background_pattern",  
     "pattern_units": [
         {intensity:50, frequency:100},
@@ -78,14 +82,13 @@ WebSocket连接`ws://127.0.0.1:60536`
 需要在app中允许程序修改强度上限
 ```
 {  
-    "version": 1,  
     "cmd": "change_max_intensity",  
-    "intensity":10,  
+    "delta_intensity":10,  
 }
 ```
 | key | type | 解释 |
 | ---- | ---- | ---- |
-| intensity | int 可为负数 | 强度上限变化值 |
+| delta_intensity | int 可为负数 | 强度上限变化值 |
 
 
 
