@@ -1,6 +1,7 @@
 # 开放郊狼控制器
-## 支持2.0 & 3.0
  [![](https://img.shields.io/badge/-TelegramChat-f2f3f4?style=flat-square&logo=Telegram&logoColor=2ca5e0)](https://t.me/dglabfun)
+## 支持2.0 & 3.0
+2.0目前存在bug正在修复  
    
 ## 使用教程
 - 连接郊狼
@@ -12,9 +13,13 @@
 
 ## API示例: 设置波形和强度
 WebSocket连接`ws://127.0.0.1:60536/1`  
+- 为什么使用WebSocket
+	- 支持掉线检测, 尽早发现掉线
+	- 支持浏览器和小程序
+
 这里ip是开启了娱乐模式的手机  
-`/1`代表API版本号为1, 照着填就好. 老版本api-v1已做兼容处理  
-连接以后, 将以下dictionary转换为json发送到设备  
+`/1`代表API版本号为1, 照着填就好. 老版本api已做兼容处理  
+连接以后, 将以下dictionary转换为json并发送  
 ```
 {  
     "cmd": "set_pattern",  
@@ -37,7 +42,7 @@ WebSocket连接`ws://127.0.0.1:60536/1`
 ![17103997466612](https://github.com/open-toys-controller/open-DGLAB-controller/assets/163114276/e37361f9-3186-4f3e-8a3e-e5b0a13b1d69)
 
 
-# API完整版
+# 更多API
 ### 停止输出波形
 ```
 {  
