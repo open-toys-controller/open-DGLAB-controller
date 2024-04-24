@@ -1,15 +1,16 @@
 # 开放郊狼控制器
  [![](https://img.shields.io/badge/-TelegramChat-f2f3f4?style=flat-square&logo=Telegram&logoColor=2ca5e0)](https://t.me/dglabfun)
 ## 支持2.0 & 3.0
-2.0目前存在bug正在修复  
    
-## 使用教程
+## 游戏连接教程
 - 连接郊狼
-- 启动娱乐模式
+- 本app中启动娱乐模式
 - 启动第三方软件
+	- 部分支持自动连接本地 (需要本控制器和游戏在同一台设备上运行)
+ 	- 部分需要输入ip地址 (连接wifi后启动娱乐模式会有显示)
 
 ### [请为接下来要适配的小玩具投票>>](https://jinshuju.net/f/tptsRE)
-[控制器下载](https://github.com/open-toys-controller/open-DGLAB-controller/releases/latest)
+[控制器下载](https://github.com/open-toys-controller/open-DGLAB-controller/releases/latest) (请挂梯子)
 
 ## API示例: 设置波形和强度
 WebSocket连接`ws://127.0.0.1:60536/1`  
