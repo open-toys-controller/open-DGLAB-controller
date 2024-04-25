@@ -12,7 +12,8 @@
  	- 控制器与游戏不在同一台设备需要输入ip地址 (连接wifi后启动娱乐模式会有显示)
 
 ### [请为接下来要适配的小玩具投票>>](https://jinshuju.net/f/tptsRE)
-[控制器下载](https://github.com/open-toys-controller/open-DGLAB-controller/releases/latest) (请挂梯子)
+### [控制器下载](https://github.com/open-toys-controller/open-DGLAB-controller/releases/latest) (请挂梯子)
+### [现有项目展示](https://github.com/open-toys-controller/open-DGLAB-controller#dglabmouselistener)
 
 ## API接口简单示例: 设置波形和强度
 你可以使用python/网页等**任意编程语言**控制多款玩具  
