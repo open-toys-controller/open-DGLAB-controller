@@ -1,4 +1,4 @@
-# 开放玩具控制器
+# 开放玩具控制器 (OTC控制器)
  [![](https://img.shields.io/badge/-TelegramChat-f2f3f4?style=flat-square&logo=Telegram&logoColor=2ca5e0)](https://t.me/dglabfun)
 ## 支持的玩具
 - 郊狼2.0 & 3.0
