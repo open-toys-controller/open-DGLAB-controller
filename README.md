@@ -1,9 +1,11 @@
-# 开放郊狼控制器
+# 开放玩具控制器
  [![](https://img.shields.io/badge/-TelegramChat-f2f3f4?style=flat-square&logo=Telegram&logoColor=2ca5e0)](https://t.me/dglabfun)
-## 支持2.0 & 3.0
+## 支持的玩具
+- 郊狼2.0 & 3.0
+- JEUSN扣动毒龙钻扣动AI款 (开发测试优化中)
    
 ## 游戏连接教程
-- 连接郊狼
+- 连接设备
 - 本app中启动娱乐模式
 - 启动第三方软件
 	- 部分支持自动连接本地 (需要本控制器和游戏在同一台设备上运行)
