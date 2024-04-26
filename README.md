@@ -34,7 +34,7 @@ WebSocket连接`ws://127.0.0.1:60536/1`
     "ticks": -1  
 }
 ```
-切换波形为"经典", 强度100%
+切换波形为"经典", 强度100%, 循环执行, 直到停止指令
 
 
 # Awesome open-DGLAB-controller
