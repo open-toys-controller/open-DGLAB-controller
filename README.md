@@ -2,7 +2,7 @@
  [![](https://img.shields.io/badge/-TelegramChat-f2f3f4?style=flat-square&logo=Telegram&logoColor=2ca5e0)](https://t.me/dglabfun)
 ## 支持的玩具
 - 郊狼2.0 & 3.0
-- JEUSN扣动毒龙钻扣动AI款 (开发测试优化中)
+- JEUSN扣动毒龙钻扣动AI款
    
 ## 游戏连接教程
 - 连接设备
