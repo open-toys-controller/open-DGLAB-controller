@@ -12,19 +12,14 @@
  	- 控制器与游戏不在同一台设备需要输入ip地址 (连接wifi后启动娱乐模式会有显示)
 
 ### [请为接下来要适配的小玩具投票>>](https://jinshuju.net/f/tptsRE)
-### [控制器下载](https://github.com/open-toys-controller/open-DGLAB-controller/releases/latest) (请挂梯子)
+### [控制器下载](https://github.com/open-toys-controller/open-DGLAB-controller/releases/latest) (建议挂梯子)
 ### 现有项目展示见本页面末尾
 
-## API接口简单示例: 设置波形和强度
+## API程序接口简单示例: 设置波形和强度
 你可以使用python/网页等**任意编程语言**控制多款玩具  
-[查阅完整API](api.md)  
-WebSocket连接`ws://127.0.0.1:60536/1`  
-- 为什么使用WebSocket
-	- 支持掉线检测, 尽早发现掉线
-	- 支持浏览器和小程序
+[查阅完整API](https://github.com/open-toys-controller/open-DGLAB-controller/wiki/API)
 
-这里ip是进入娱乐模式的本控制器所在的ip地址  
-`/1`代表API版本号为1, 照着填就好. 老版本api已做兼容处理  
+WebSocket连接`ws://127.0.0.1:60536/1` (这里ip是进入娱乐模式的控制器所在的ip地址.`/1`代表API版本号为1, 照着填就好)  
 连接以后, 将以下内容转换为json并发送  
 ```
 {  
